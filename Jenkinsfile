@@ -1,5 +1,5 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('Build') {
       steps {
@@ -13,8 +13,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    CI = 'true'
   }
 }
